@@ -1,0 +1,23 @@
+{
+  "name": "ok",
+  "version": "1.0.0",
+  "description": "JLT",
+  "main": "App.js",
+  "dependencies": {
+    "express": "^4.15.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "hehe"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NishithSrivastava/MyFirstProject.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NishithSrivastava/MyFirstProject/issues"
+  },
+  "homepage": "https://github.com/NishithSrivastava/MyFirstProject#readme"
+}
