@@ -1,10 +1,10 @@
 var express = require ('express');
 
+var bodyParser = require ('body-parser');
+
 var app = express();
 
-var bodyparser = require ('body-parser');
-
-app.use(bodyparser.json());
+app.use(bodyParser.json());
 
 
 
@@ -25,12 +25,13 @@ app.get('/ajax', function(req, res) {
 	res.end(JSON.stringify({tweets:tweets}));
 });
 
-app.post('/ajax', function(req, res){
+app.post('/ajax', function(request, response){
 
-	var tweet = { text: req.body.tweet, time: new Date().getTime()};
-	tweets.push(tweet);
-	res.type('json');
-	res.end(JSON.stringify(tweet));
+	var y = request.body.tweet;
+	var ntweet = { text: y, time: new Date().getTime()};
+	tweets.push(ntweet);
+	response.type('json');
+	response.end(JSON.stringify(ntweet));
 
 });
 

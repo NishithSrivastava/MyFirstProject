@@ -22,11 +22,12 @@ font-family: 'Open Sans', Sans Serif;
 
 .tweet-container {
 	margin: 20px;
-    background-color: #111;
+    background-color: #E5E4E2;
 	width: 75%;
 	padding: 70px;
 	overflow: hidden;
-	
+	border: 2px solid gray;
+	border-radius: 15px;
 }
 
 .tweet-input {
@@ -34,7 +35,7 @@ font-family: 'Open Sans', Sans Serif;
 	align-content: center;
 }
 
-.button {
+.button1 {
 	margin-top: 10px;
 	background color: #33cc00;
     cursor: pointer;
