@@ -5,6 +5,7 @@ var bodyParser = require ('body-parser');
 var app = express();
 
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));
 
 
 
@@ -35,7 +36,7 @@ app.post('/ajax', function(request, response){
 
 });
 
-var server = app.listen(8090, function() {
-	console.log("Server running on localhost:8090");
+var server = app.listen(9000, function() {
+	console.log("Server running on localhost:9000");
 } );
 

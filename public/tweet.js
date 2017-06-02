@@ -25,7 +25,7 @@ $('.button1').click(function () { console.log (JSON.stringify($('#BT').val()));
 		type: "POST",
 		url: "/ajax",
 		contentype:'application/json',
-		data: JSON.stringify({tweet: $('#BT').val()}),
+		data: {tweet: $('#BT').val()},
 		success: function(data){
 			appendtweet(data);
 			$('#BT').val('');
