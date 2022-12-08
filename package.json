@@ -5,7 +5,7 @@
   "main": "App.js",
   "dependencies": {
     "code": "^5.2.4",
-    "express": "^4.15.3"
+    "express": "^4.18.2"
   },
   "scripts": {
     "test": "hehe"
